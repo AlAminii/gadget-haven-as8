@@ -4,18 +4,16 @@ import { IoMdHeartEmpty } from "react-icons/io";
 
 
 const Nav = () => {
-    const links = [
-       <>
-       
-       <li> <NavLink to="/">Home</NavLink></li>,
-        <li> <NavLink to="/statistics"> Statistics</NavLink></li>,
-        <li> <NavLink to="/dashboard">Dashboard</NavLink></li>
-        </>
-    ]
+  const links = [
+    <li key="home"><NavLink to="/">Home</NavLink></li>,
+    <li key="statistics"><NavLink to="/statistics">Statistics</NavLink></li>,
+    <li key="dashboard"><NavLink to="/dashboard">Dashboard</NavLink></li>
+];
         
 
     return (
-        <div className="navbar  bg-[#9538E2]  text-white rounded-t-lg">
+     <div className="w-11/12 mx-auto">
+         <div className="navbar  bg-[#9538E2] fixed top-0  left-0 right-0 z-50  text-white rounded-t-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,6 +52,7 @@ const Nav = () => {
 
         </div>
       </div>
+     </div>
     );
 };
 

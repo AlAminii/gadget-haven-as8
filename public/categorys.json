@@ -1,0 +1,28 @@
+[
+    {
+      "product_id": 1,
+      "category": "Laptops",
+      "slug": "apple-macbook-pro-16"
+    },
+    {
+      "product_id": 2,
+      "category": "Phones",
+      "slug": "samsung-galaxy-s24-ultra"
+    },
+    {
+      "product_id": 3,
+      "category": "Smart Watches",
+      "slug": "samsung-galaxy-watch-6"
+    },
+    {
+      "product_id": 4,
+      "category": "Accessories",
+      "slug": "sony-wh-1000xm5"
+    },
+    {
+      "product_id": 5,
+      "category": "Power Banks",
+      "slug": "anker-powercore-26800mah"
+    }
+  ]
+  

@@ -1,0 +1,115 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Apple MacBook Pro 16",
+      "product_image": "https://i.ibb.co.com/z6Kgkhs/l1.jpg",
+      "category": "laptops",
+      "price": 1999,
+      "description": "Powerful laptop with M2 chip for professionals.",
+      "specification": ["16GB RAM", "512GB SSD", "M2 Pro Chip"],
+      "availability": true,
+      "rating": 4.8
+    },
+   
+    {
+      "product_id": 2,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/6Z6gPF6/l2.jpg",
+      "category": "laptops",
+      "price": 1499,
+      "description": "Ultra-thin and lightweight laptop with premium build.",
+      "specification": ["16GB RAM", "1TB SSD", "Intel i7"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 3,
+      "product_title": "Samsung Galaxy S24 Ultra",
+      "product_image": "https://i.ibb.co.com/p4DKjQS/phn1.jpg",
+      "category": "Phones",
+      "price": 1299,
+      "description": "Flagship phone with stunning display and camera.",
+      "specification": ["6.8-inch AMOLED", "200MP Camera", "5000mAh Battery"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 4,
+      "product_title": "iPhone 15 Pro Max",
+      "product_image": "https://i.ibb.co.com/NrnFqLv/phn2.jpg",
+      "category": "Phones",
+      "price": 1599,
+      "description": "Premium phone with titanium body and A17 chip.",
+      "specification": ["6.7-inch OLED", "48MP Camera", "ProMotion Display"],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+      "product_id": 5,
+      "product_title": "Apple Watch Ultra",
+      "product_image": "https://i.ibb.co.com/mbCny11/sm1.jpg",
+      "category": "Smart Watches",
+      "price": 799,
+      "description": "Rugged smartwatch for outdoor adventures.",
+      "specification": ["Titanium Case", "GPS & Cellular", "100m Water Resistance"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 6,
+      "product_title": "Samsung Galaxy Watch 6",
+      "product_image": "https://i.ibb.co.com/ysF4tHb/sm2.jpg",
+      "category": "Smart Watches",
+      "price": 349,
+      "description": "Stylish smartwatch with health tracking features.",
+      "specification": ["Super AMOLED", "Sleep & Heart Rate Monitor"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 7,
+      "product_title": "Anker PowerCore 26800mAh",
+      "product_image": "https://i.ibb.co.com/0J3c1ns/pw1.jpg",
+      "category": "Power Banks",
+      "price": 99,
+      "description": "High-capacity portable charger with fast charging.",
+      "specification": ["26800mAh", "USB-C & USB-A", "Fast Charging"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 8,
+      "product_title": "Xiaomi 20000mAh Power Bank",
+      "product_image": "https://i.ibb.co.com/Scv43pw/pw2.jpg",
+      "category": "Power Banks",
+      "price": 59,
+      "description": "Reliable power bank with dual USB output.",
+      "specification": ["20000mAh", "Quick Charge 3.0", "Lightweight Design"],
+      "availability": false,
+      "rating": 4.3
+    },
+    {
+      "product_id": 9,
+      "product_title": "Sony WH-1000XM5",
+      "product_image": "https://i.ibb.co.com/qJ30sdh/ac1.jpg",
+      "category": "Accessories",
+      "price": 399,
+      "description": "Best-in-class noise-canceling headphones.",
+      "specification": ["ANC", "30 Hours Battery", "Bluetooth 5.2"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 10,
+      "product_title": "Logitech MX Master 3S",
+      "product_image": "https://i.ibb.co.com/TWwy1vX/ac2.jpg",
+      "category": "Accessories",
+      "price": 129,
+      "description": "Ergonomic wireless mouse with precision tracking.",
+      "specification": ["MagSpeed Scrolling", "USB-C Charging", "Silent Clicks"],
+      "availability": true,
+      "rating": 4.8
+    }
+    
+  ]
+  
