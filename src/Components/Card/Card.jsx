@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 
 
 const Card = ({item}) => {
-    const {price, product_image, product_title} = item
+    const {price, product_image, product_title, product_id} = item
     return (
-        <div>
-         <div className="card card-compact  w-auto shadow-xl gap-y-4 mt-4">
+     
+      <Link to={`/item/${product_id}`}>
+           <div className="card card-compact  w-auto shadow-xl gap-y-4 mt-4">
         <figure>
         <img src={product_image} alt="" />
         </figure>
@@ -16,7 +18,9 @@ const Card = ({item}) => {
           </div>
         </div>
       </div>
-        </div>
+         
+      </Link>
+        
     );
 };
 
