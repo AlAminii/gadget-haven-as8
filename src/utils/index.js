@@ -41,4 +41,9 @@ const addtoWishlist = item =>{
     toast.success('succefull added')
 }
 
-export {addtoCart, getAllitems, addtoWishlist, getAllwishlist}
+const clearcart = (setItems, navigate)=>{
+    localStorage.removeItem('items')
+    setItems([])
+    navigate('/')
+}
+export {addtoCart, getAllitems, addtoWishlist, getAllwishlist, clearcart}

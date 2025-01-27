@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import donep from "../../assets/Group.png";
+import { clearcart } from "../../utils";
 
-const Cartpageheader = ({ totalPrice }) => {
+const Cartpageheader = ({ totalPrice, setItems }) => {
+    const navigate = useNavigate()
   return (
     <div>
       <div className="flex justify-between">
@@ -25,7 +28,7 @@ const Cartpageheader = ({ totalPrice }) => {
 
     <div className="modal-action">
       <form method="dialog">
-        <button className="btn bg-blue-600 text-white px-4 py-2 rounded-lg">Close</button>
+        <button onClick={()=> clearcart(setItems, navigate)} className="btn bg-blue-600 text-white px-4 py-2 rounded-lg">Close</button>
       </form>
     </div>
   </div>
