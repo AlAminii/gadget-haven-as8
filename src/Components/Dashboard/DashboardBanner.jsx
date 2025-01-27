@@ -12,7 +12,7 @@ const DashboardBanner = ({ setView, view }) => {
             {/* ✅ Cart Button */}
             <button
               onClick={() => setView("cart")}
-              className={`btn ${view === "cart" ? "bg-white text-black border border-blue-500 font-bold shadow-lg" : "bg-gray-300 text-black"}`}
+              className={`btn ${view === "cart" ? "btn-active bg-white text-black font-bold" : "bg-gray-300 text-black"}`}
             >
               Cart
             </button>
@@ -20,7 +20,7 @@ const DashboardBanner = ({ setView, view }) => {
             {/* ✅ Wishlist Button */}
             <button
               onClick={() => setView("wishlist")}
-              className={`btn ${view === "wishlist" ? "bg-white text-black border border-blue-400 font-bold shadow-lg" : "bg-gray-300 text-black"}`}
+              className={`btn ${view === "wishlist" ? "btn-active bg-white text-black font-bold" : "bg-gray-300 text-black"}`}
             >
               Wishlist
             </button>
