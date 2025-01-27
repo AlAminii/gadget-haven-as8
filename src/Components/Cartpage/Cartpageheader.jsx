@@ -2,16 +2,22 @@ import { useNavigate } from "react-router-dom";
 import donep from "../../assets/Group.png";
 import { clearcart } from "../../utils";
 
-const Cartpageheader = ({ totalPrice, setItems }) => {
+const Cartpageheader = ({ totalPrice, setItems, items }) => {
     const navigate = useNavigate()
+
+    const sortbyprice = ()=>{
+      const sortedItems = [...items].sort((a,b)=>b.price - a.price)
+      setItems(sortedItems)
+    }
   return (
     <div>
       <div className="flex justify-between">
         <h1 className="text-4xl font-bold">cart</h1>
         <div className="flex justify-center items-center gap-x-5">
           <p>Totalprice: {totalPrice}</p>
+          <button onClick={sortbyprice} className="btn-outline border rounded-lg px-4 py-3">Sort by Price</button>
           <button
-            className="btn bg-purple-500 text-white"
+            className="btn bg-[#9538E2] text-white"
             onClick={() => document.getElementById("my_modal_4").showModal()}
           >
             purches

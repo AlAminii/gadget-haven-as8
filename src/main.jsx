@@ -9,6 +9,7 @@ import Home from "./Components/Home/Home.jsx";
 import Categoriecard from "./Components/Categoriecard/Categoriecard.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
 import Carddetails from "./Components/Carddetails/Carddetails.jsx";
+import Faq from "./Components/Faq/Faq.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
       {
         path:"/dashboard",
         element:<Dashboard></Dashboard>
+      },
+      {
+
+        path:'/faq',
+        element:<Faq></Faq>
       },
       {
         path:"/item/:product_id",

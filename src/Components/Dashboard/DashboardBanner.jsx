@@ -11,19 +11,19 @@ const DashboardBanner = ({ setView, view }) => {
           <div className="flex gap-4 justify-center mt-5">
             {/* ✅ Cart Button */}
             <button
-              onClick={() => setView("cart")}
-              className={`btn ${view === "cart" ? "btn-active bg-white text-black font-bold" : "bg-gray-300 text-black"}`}
-            >
-              Cart
-            </button>
-  
-            {/* ✅ Wishlist Button */}
-            <button
-              onClick={() => setView("wishlist")}
-              className={`btn ${view === "wishlist" ? "btn-active bg-white text-black font-bold" : "bg-gray-300 text-black"}`}
-            >
-              Wishlist
-            </button>
+  onClick={() => setView("cart")}
+  className={`btn ${view === "cart" ? "btn-primary" : "btn-outline"}`}
+>
+  Cart
+</button>
+
+<button
+  onClick={() => setView("wishlist")}
+  className={`btn ${view === "wishlist" ? "btn-primary" : "btn-outline"}`}
+>
+  Wishlist
+</button>
+
           </div>
         </div>
       </div>

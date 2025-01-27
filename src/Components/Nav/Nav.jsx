@@ -7,7 +7,8 @@ const Nav = () => {
   const links = [
     <li key="home"><NavLink to="/">Home</NavLink></li>,
     <li key="statistics"><NavLink to="/statistics">Statistics</NavLink></li>,
-    <li key="dashboard"><NavLink to="/dashboard">Dashboard</NavLink></li>
+    <li key="dashboard"><NavLink to="/dashboard">Dashboard</NavLink></li>,
+    <li key="faq"><NavLink to="/faq">FAQ</NavLink></li>,
 ];
         
 

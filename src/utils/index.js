@@ -1,3 +1,4 @@
+import { setItem } from "localforage"
 import toast from "react-hot-toast"
 
 const getAllitems = ()=>{
@@ -46,4 +47,13 @@ const clearcart = (setItems, navigate)=>{
     setItems([])
     navigate('/')
 }
-export {addtoCart, getAllitems, addtoWishlist, getAllwishlist, clearcart}
+const clearwishlist = (item) => {
+ 
+    const wishlists = JSON.parse(localStorage.getItem("wishlists")) || [];
+
+    
+    const updatedWishlist = wishlists.filter((gadget) => gadget.product_id !== item.product_id);
+
+    localStorage.setItem("wishlists", JSON.stringify(updatedWishlist));
+};
+export {addtoCart, getAllitems, addtoWishlist, getAllwishlist, clearcart, clearwishlist}
