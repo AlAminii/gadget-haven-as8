@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addtoCart } from "../../utils";
+import { addtoCart, addtoWishlist } from "../../utils";
 import Productbanner from "../Productdetailsbanner/Productbanner";
+import { IoMdHeartEmpty } from "react-icons/io";
 
 const Carddetails = () => {
   const { product_id } = useParams();
@@ -11,6 +12,10 @@ const Carddetails = () => {
 
   const handaleAddtocart = item=>{
     addtoCart(item)
+  }
+
+  const handaleAddtowishlist = item =>{
+    addtoWishlist(item)
   }
 
   useEffect(() => {
@@ -74,12 +79,15 @@ const Carddetails = () => {
               </p>
             </div>
 
-            <div className="card-actions mt-4">
+            <div className="card-actions mt-4 flex justify-center items-center gap-5">
               <button onClick={()=> handaleAddtocart(item)}
                 className="btn btn-primary px-6"
                 disabled={!item.availability}
               >
                 {item.availability ? "Addtocart" : "Sold Out"}
+              </button>
+              <button onClick={()=> handaleAddtowishlist(item)} className="border-black bg-gray-100 p-2 rounded-xl">
+                 <IoMdHeartEmpty className="text-4xl  " />
               </button>
             </div>
           </div>
